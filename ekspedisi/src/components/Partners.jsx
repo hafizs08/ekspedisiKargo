@@ -51,40 +51,7 @@ export default function Partners() {
 
         {/* 3 VALUE UTAMA DI BAWAH LOGO */}
         {/* 3. Menyesuaikan border-t penutup grid atas */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12 pt-10 border-t border-gray-100 dark:border-slate-800">
-          
-          <div className="flex gap-4 items-start text-left">
-            {/* 4. Mengoptimalkan background kontainer icon agar lebih soft di layar gelap */}
-            <div className="w-10 h-10 rounded-xl bg-[#4472C4]/10 flex items-center justify-center text-[#4472C4] flex-shrink-0 dark:bg-blue-500/10 dark:text-blue-400">
-              <ShieldCheck size={20} />
-            </div>
-            <div>
-              <h3 className="text-sm font-bold text-[#1F2E4D] dark:text-slate-200">Garansi Aman & Berasuransi</h3>
-              <p className="text-xs text-gray-400 mt-1 leading-relaxed dark:text-slate-400">Setiap pengiriman diproteksi penuh perlindungan asuransi kargo standar internasional.</p>
-            </div>
-          </div>
-
-          <div className="flex gap-4 items-start text-left">
-            <div className="w-10 h-10 rounded-xl bg-[#ED7D31]/10 flex items-center justify-center text-[#ED7D31] flex-shrink-0 dark:bg-orange-500/10 dark:text-orange-400">
-              <Award size={20} />
-            </div>
-            <div>
-              <h3 className="text-sm font-bold text-[#1F2E4D] dark:text-slate-200">Kepatuhan Regulasi Resmi</h3>
-              <p className="text-xs text-gray-400 mt-1 leading-relaxed dark:text-slate-400">Berlisensi resmi Asosiasi Perusahaan Jasa Pengiriman Ekspres Indonesia (ASPERINDO).</p>
-            </div>
-          </div>
-
-          <div className="flex gap-4 items-start text-left">
-            <div className="w-10 h-10 rounded-xl bg-[#4472C4]/10 flex items-center justify-center text-[#4472C4] flex-shrink-0 dark:bg-blue-500/10 dark:text-blue-400">
-              <Globe2 size={20} />
-            </div>
-            <div>
-              <h3 className="text-sm font-bold text-[#1F2E4D] dark:text-slate-200">Integrasi API Multiplatform</h3>
-              <p className="text-xs text-gray-400 mt-1 leading-relaxed dark:text-slate-400">Hubungkan sistem inventaris toko online Anda secara otomatis lewat dokumentasi API kami.</p>
-            </div>
-          </div>
-
-        </div>
+        
 
       </div>
     </section>

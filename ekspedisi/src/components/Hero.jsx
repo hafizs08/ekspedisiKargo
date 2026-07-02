@@ -99,65 +99,6 @@ export default function Hero() {
                     </div>
 
                     {/* Informasi Detail Paket */}
-                    <div className="flex justify-between items-start border-b border-gray-100 pb-5 mb-5 text-left dark:border-slate-800">
-                        <div>
-                            <div className="text-sm font-bold text-[#4472C4] dark:text-blue-400">KGX-2026-087541</div>
-                            <div className="text-xs text-gray-400 mt-1 dark:text-slate-400">Elektronik · 2.5 kg · Jakarta → Surabaya</div>
-                        </div>
-                        <span className="bg-emerald-50 border border-emerald-200 text-emerald-600 text-[11px] font-bold px-2.5 py-1 rounded-md dark:bg-emerald-950/30 dark:border-emerald-800 dark:text-emerald-400">
-                            Dalam Perjalanan
-                        </span>
-                    </div>
-
-                    {/* Timeline Pengiriman */}
-                    <div className="flex flex-col gap-5 text-left">
-                        {/* Step 1 */}
-                        <div className="flex gap-4">
-                            <div className="flex flex-col items-center">
-                                <CheckCircle2 size={16} className="text-emerald-500 fill-emerald-50 dark:fill-emerald-950/30" />
-                                <div className="w-0.5 flex-1 bg-emerald-200 min-h-[24px] my-1 dark:bg-emerald-900" />
-                            </div>
-                            <div>
-                                <div className="text-xs font-bold text-[#1F2E4D] dark:text-slate-200">Paket diterima di gudang</div>
-                                <div className="text-[11px] text-gray-400 mt-0.5 dark:text-slate-400">Jakarta Pusat · Sen, 10 Jun · 09:14</div>
-                            </div>
-                        </div>
-
-                        {/* Step 2 */}
-                        <div className="flex gap-4">
-                            <div className="flex flex-col items-center">
-                                <CheckCircle2 size={16} className="text-emerald-500 fill-emerald-50 dark:fill-emerald-950/30" />
-                                <div className="w-0.5 flex-1 bg-[#F4F7FC] min-h-[24px] my-1 dark:bg-slate-800" />
-                            </div>
-                            <div>
-                                <div className="text-xs font-bold text-[#1F2E4D] dark:text-slate-200">Berangkat dari hub Jakarta</div>
-                                <div className="text-[11px] text-gray-400 mt-0.5 dark:text-slate-400">Sortir & packing selesai · 13:40</div>
-                            </div>
-                        </div>
-
-                        {/* Step 3 (Aktif) */}
-                        <div className="flex gap-4">
-                            <div className="flex flex-col items-center">
-                                <span className="w-4 h-4 rounded-full bg-[#ED7D31] border-4 border-orange-100 flex-shrink-0 dark:border-orange-950" />
-                                <div className="w-0.5 flex-1 border-r-2 border-dashed border-gray-200 min-h-[24px] my-1 dark:border-slate-700" />
-                            </div>
-                            <div>
-                                <div className="text-xs font-bold text-[#ED7D31]">Transit hub Semarang</div>
-                                <div className="text-[11px] text-gray-400 mt-0.5 dark:text-slate-400">Dalam perjalanan · Est. tiba 23:00</div>
-                            </div>
-                        </div>
-
-                        {/* Step 4 */}
-                        <div className="flex gap-4">
-                            <div className="flex flex-col items-center">
-                                <span className="w-3 h-3 rounded-full bg-gray-100 border-2 border-gray-300 flex-shrink-0 mt-0.5 dark:bg-slate-800 dark:border-slate-600" />
-                            </div>
-                            <div>
-                                <div className="text-xs font-bold text-gray-300 dark:text-slate-600">Tiba di Surabaya</div>
-                                <div className="text-[11px] text-gray-300 mt-0.5 dark:text-slate-600">Estimasi Sel, 11 Jun · 08:00</div>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
 

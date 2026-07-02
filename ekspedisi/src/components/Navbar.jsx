@@ -8,7 +8,7 @@ export default function Navbar() {
   const { dark, setDark } = useTheme();
 
   const menuItems = [
-    { label: "Beranda", href: "#", active: true },
+    { label: "Beranda", href: "#beranda", active: true },
     { label: "Layanan", href: "#layanan" },
     { label: "Lacak Paket", href: "#tracking" },
     { label: "Tarif", href: "#tarif" },
@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white shadow-sm transition-colors duration-300 dark:border-slate-700 dark:bg-slate-900">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        
+
         {/* Kiri: Logo */}
         <div className="flex cursor-pointer items-center gap-3">
           <img
@@ -26,26 +26,25 @@ export default function Navbar() {
             alt="Duta Jaya Ekspress"
             className="h-10 w-auto object-contain"
           />
-          <span className="text-xl font-black tracking-tight text-[#4472C4] dark:text-white">
+          <span className="text-xl font-black tracking-tight text-[#022E72] dark:text-white">
             Duta Jaya{" "}
-            <span className="text-[#ED7D31]">Ekspress</span>
+            <span className="text-[#C48C3A]">Ekspress</span>
           </span>
         </div>
 
         {/* Kanan: Gabungan Menu Desktop & Tombol Aksi */}
         <div className="flex items-center gap-6">
-          
+
           {/* Desktop Navigation Links */}
           <div className="hidden items-center gap-8 md:flex">
             {menuItems.map((item, index) => (
               <a
                 key={index}
                 href={item.href}
-                className={`text-sm font-medium transition ${
-                  item.active
+                className={`text-sm font-medium transition ${item.active
                     ? "font-semibold text-[#4472C4]"
                     : "text-gray-600 hover:text-[#4472C4] dark:text-gray-300 dark:hover:text-[#ED7D31]"
-                }`}
+                  }`}
               >
                 {item.label}
               </a>
@@ -96,11 +95,10 @@ export default function Navbar() {
                 key={index}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className={`block rounded-lg px-4 py-3 text-sm font-medium transition ${
-                  item.active
+                className={`block rounded-lg px-4 py-3 text-sm font-medium transition ${item.active
                     ? "bg-[#4472C4]/10 text-[#4472C4]"
                     : "text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-slate-800"
-                }`}
+                  }`}
               >
                 {item.label}
               </a>

@@ -10,6 +10,7 @@ html, body, #root {
   background-color: #FFFFFF !important; /* Paksa putih bersih saat normal */
   color: #1F2E4D !important;            /* Teks gelap */
   transition: background-color 0.2s ease, color 0.2s ease;
+  scroll-behavior: smooth;
 }
 
 /* 2. ATURAN KHUSUS (HANYA AKTIF JIKA ADA CLASS .dark) */

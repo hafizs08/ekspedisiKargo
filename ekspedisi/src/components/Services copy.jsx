@@ -7,9 +7,7 @@ import {
   House,
   Warehouse,
   ArrowRight,
-  MessageCircle,
 } from "lucide-react";
-import { FaWhatsapp } from "react-icons/fa";
 
 export default function Services() {
   const whatsappNumber = "6281533190347";
@@ -73,17 +71,30 @@ export default function Services() {
   };
 
   return (
-    <section
+    <section 
       className="bg-[#F4F7FC] py-20 px-5 transition-colors duration-300 dark:bg-slate-950 relative overflow-hidden"
       style={{
-        // Menggunakan Variabel CSS yang disuplai dari global CSS (Bisa deteksi dark mode v4)
+        // TEKSTUR UTAMA: Pola Grid Garis Halus (Merepresentasikan Alur Navigasi/Rute Logistik)
         backgroundImage: `
-          linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
-          linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px)
+          linear-gradient(to right, rgba(68, 114, 196, 0.05) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(68, 114, 196, 0.05) 1px, transparent 1px)
         `,
         backgroundSize: '40px 40px',
       }}
     >
+      {/* Ornamen Grafis Tambahan Bermotif Garis Rute abstrak di pojok kanan & kiri latar belakang */}
+      <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.05] pointer-events-none"
+        style={{
+          backgroundImage: `
+            linear-gradient(45deg, #000 25%, transparent 25%), 
+            linear-gradient(-45deg, #000 25%, transparent 25%), 
+            linear-gradient(45deg, transparent 75%, #000 75%), 
+            linear-gradient(-45deg, transparent 75%, #000 75%)
+          `,
+          backgroundSize: '20px 20px',
+        }}
+      />
+
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Heading */}
         <div className="max-w-3xl mx-auto text-center mb-14">
@@ -111,7 +122,7 @@ export default function Services() {
               key={index}
               className="group relative overflow-hidden rounded-3xl border border-gray-200/80 p-8 bg-white dark:bg-slate-900 hover:-translate-y-2 hover:shadow-2xl hover:shadow-gray-300/30 dark:hover:shadow-none transition-all duration-300 flex flex-col dark:border-slate-800"
             >
-              {/* Background Glow */}
+              {/* Background Blur Glow */}
               <div
                 className="absolute -top-16 -right-16 w-44 h-44 rounded-full blur-3xl opacity-10 dark:opacity-15 group-hover:opacity-20 transition-opacity"
                 style={{ backgroundColor: service.color }}
@@ -173,7 +184,7 @@ export default function Services() {
 
             <div>
               <h3 className="text-xl font-bold text-[#1F2E4D] dark:text-slate-100">
-                Butuh Bantuan Dan Pertanyaan Khusus ?
+                Butuh Armada atau Pengiriman Khusus?
               </h3>
 
               <p className="text-gray-500 mt-2 dark:text-slate-400">
@@ -185,12 +196,10 @@ export default function Services() {
 
           <button
             onClick={() =>
-              openWhatsapp(`Halo Admin\n\nSaya ingin berkonsultasi mengenai layanan logistik untuk perusahaan saya.\n\nMohon informasi lebih lanjut.\n\nTerima kasih.`)
+              openWhatsapp(`Halo Admin\n\nSaya ingin berkonsultasi mengenai layanan logistik untuk perusahaan saya.\n\nMohon informasi lebih lanjut.\n\nTeria kasih.`)
             }
-            className="bg-[#4472C4] text-white px-7 py-3 rounded-xl font-semibold hover:bg-[#ED7D31] dark:bg-blue-600 dark:hover:bg-[#ED7D31] transition flex items-center justify-center gap-2.5 whitespace-nowrap w-full lg:w-auto text-center"
+            className="bg-[#4472C4] text-white px-7 py-3 rounded-xl font-semibold hover:bg-[#355fb0] dark:bg-blue-600 dark:hover:bg-blue-500 transition whitespace-nowrap w-full lg:w-auto text-center"
           >
-            {/* Logo Resmi WhatsApp Menggunakan SVG Inline */}
-            <FaWhatsapp className="w-5 h-5" />
             Hubungi Kami
           </button>
         </div>

@@ -1,5 +1,7 @@
 import React from 'react';
-import { ArrowRight, PhoneCall, CheckCircle } from 'lucide-react';
+import { ArrowRight, CheckCircle } from 'lucide-react';
+import kapal from "../assets/kapal2.jpg";
+import logo from "../assets/logo2.png";
 
 export default function CtaSection() {
   const benefits = [
@@ -8,21 +10,30 @@ export default function CtaSection() {
     'Penjemputan paket gratis ke rumah'
   ];
 
+  const openWhatsapp = (message) => {
+    const whatsappNumber = "6281533190347";
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+  };
+
   return (
-    // 1. Ditambahkan dark:bg-slate-900 agar background luar mengikuti tema gelap
-    <section className="w-full bg-white py-16 lg:py-20 px-4 sm:px-6 lg:px-8 transition-colors duration-300 dark:bg-slate-900">
+    <section className="w-full bg-[#F4F7FC] py-16 lg:py-20 px-4 sm:px-6 lg:px-8 transition-colors duration-300 dark:bg-slate-950">
       
-      {/* Container Utama dengan Background Royal Blue */}
-      {/* 2. Mengurangi opacity shadow di mode gelap (dark:shadow-none atau shadow-black/40) agar tidak terlalu berpijar biru */}
-      <div className="max-w-7xl mx-auto bg-[#4472C4] rounded-3xl p-8 sm:p-12 lg:p-16 relative overflow-hidden shadow-xl shadow-[#4472C4]/20 dark:shadow-2xl dark:shadow-black/30 text-left">
+      {/* Container Utama dengan Background Gambar Kapal + Overlay Gelap */}
+      <div 
+        className="max-w-7xl mx-auto rounded-3xl p-8 sm:p-12 lg:p-16 relative overflow-hidden shadow-xl shadow-gray-300/50 dark:shadow-2xl dark:shadow-black/50 text-left bg-cover bg-center"
+        style={{
+          // Menggabungkan gradasi gelap (overlay) dan gambar kapal agar teks putih tetap kontras dan jelas
+          backgroundImage: `linear-gradient(to right, rgba(15, 23, 42, 0.95) 40%, rgba(15, 23, 42, 0.6) 100%), url(${kapal})`,
+        }}
+      >
         
-        {/* Ornamen Grafis Latar Belakang Lingkaran (Orange & Putih Transparan) */}
-        <div className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-[#ED7D31]/20 pointer-events-none blur-xl" />
-        <div className="absolute top-12 right-12 w-48 h-48 rounded-full bg-white/5 pointer-events-none" />
+        {/* Ornamen Grafis Latar Belakang Lingkaran Orange Lembut */}
+        <div className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-[#ED7D31]/10 pointer-events-none blur-3xl" />
 
         <div className="max-w-3xl relative z-10">
           {/* Badge */}
-          <span className="inline-block bg-white/10 border border-white/20 text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-md mb-6">
+          <span className="inline-block bg-white/10 border border-white/20 text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-md mb-6 backdrop-blur-sm">
             Mulai Pengiriman Hari Ini
           </span>
 
@@ -33,32 +44,28 @@ export default function CtaSection() {
           </h2>
 
           {/* Deskripsi Singkat */}
-          {/* 3. Mengubah text-blue-100 menjadi text-blue-50/90 untuk keterbacaan yang lebih solid di layar gelap */}
-          <p className="text-sm sm:text-base text-blue-50/90 leading-relaxed mb-8 max-w-2xl">
-            Daftar akun Duta Jaya Ekspress gratis sekarang juga. Nikmati kemudahan melacak resi otomatis, integrasi e-commerce, dan pengelolaan manifes logistik terpusat dalam satu dasbor modern.
+          <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-8 max-w-2xl">
+            Hubungi Duta Jaya Ekspress sekarang juga. Nikmati kemudahan pelacakan resi, solusi logistik terintegrasi, dan pengelolaan pengiriman terpusat yang dipandu langsung oleh tim profesional kami.
           </p>
 
           {/* List Keunggulan Instan */}
-          <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-10">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-5 mb-10">
             {benefits.map((benefit, index) => (
               <div key={index} className="flex items-center gap-2 text-white">
                 <CheckCircle size={16} className="text-[#ED7D31] fill-[#ED7D31]/10 flex-shrink-0" />
-                <span className="text-xs font-medium text-blue-50">{benefit}</span>
+                <span className="text-xs font-semibold text-slate-200">{benefit}</span>
               </div>
             ))}
           </div>
 
           {/* Grup Tombol Utama */}
           <div className="flex flex-wrap items-center gap-4">
-            <button className="px-6 py-3.5 bg-[#ED7D31] text-white font-bold text-sm rounded-xl hover:bg-[#d96a20] transition-colors border-none flex items-center gap-2 cursor-pointer shadow-lg shadow-[#ED7D31]/20">
-              Daftar Sekarang Gratis
+            <button 
+              onClick={() => openWhatsapp("Halo Admin\n\nSaya ingin tahu lebih lanjut mengenai layanan pengiriman Duta Jaya Ekspress.\n\nMohon informasinya. Terima kasih.")}
+              className="px-6 py-3.5 bg-[#ED7D31] text-white font-bold text-sm rounded-xl hover:bg-[#d96a20] transition-colors border-none flex items-center gap-2 cursor-pointer shadow-lg shadow-[#ED7D31]/30"
+            >
+              Hubungi Tim Sales
               <ArrowRight size={16} />
-            </button>
-            
-            {/* 4. Mengoptimalkan tombol sekunder agar terlihat menyatu baik di mode terang maupun gelap */}
-            <button className="px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold text-sm rounded-xl transition-all flex items-center gap-2 cursor-pointer backdrop-blur-sm">
-              <PhoneCall size={16} />
-              Hubungi Tim Sales B2B
             </button>
           </div>
 

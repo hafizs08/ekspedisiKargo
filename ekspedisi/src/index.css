@@ -1,7 +1,15 @@
 @import "tailwindcss";
 
-
 @custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --grid-color: rgba(68, 114, 196, 0.07); /* Biru logistik transparan di light mode */
+}
+
+/* Deteksi dark mode v4 */
+:where(.dark, .dark *) {
+  --grid-color: rgba(255, 255, 255, 0.04); /* Putih abu-abu transparan di dark mode */
+}
 
 :root, body, #root {
   margin: 0;
@@ -10,8 +18,16 @@
   background-color: #F7F9FC;
   width: 100%;
   min-height: 100vh;
+  transition: background-color 0.3s ease;
+}
+
+:where(.dark, .dark *) body {
+  background-color: #020617; /* Background utama jadi gelap saat dark mode */
 }
 
 * {
   box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
 }
