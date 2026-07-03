@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight, CheckCircle } from 'lucide-react';
-import kapal from "../assets/kapal2.jpg";
-import logo from "../assets/logo2.png";
+import kapal from "../assets/kapal.jpg";
+import logo from "../assets/logo.png";
 
 export default function CtaSection() {
   const benefits = [

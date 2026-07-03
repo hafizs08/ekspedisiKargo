@@ -1,6 +1,7 @@
 import React from 'react';
 import { MapPin, Phone, Mail, ArrowUpRight } from 'lucide-react';
 import logo from '../assets/logo.png';
+import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   const companyLinks = ['Tentang Kami', 'Lowongan Kerja', 'Kontak Kami', 'Prestasi'];
@@ -17,10 +18,10 @@ export default function Footer() {
   return (
     <footer className="w-full bg-[#1F2E4D] border-t border-[#2A3C5F] pt-16 pb-8 px-4 sm:px-6 lg:px-8 text-left">
       <div className="max-w-7xl mx-auto">
-        
+
         {/* BAGIAN UTAMA: GRID FOOTER */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
-          
+
           {/* KOLOM 1: PROFIL PERUSAHAAN & ALAMAT */}
           <div className="lg:col-span-2 flex flex-col gap-5">
             {/* Logo Duta Jaya Ekspress (Sudah Diperbaiki Struktur Div) */}
@@ -91,9 +92,43 @@ export default function Footer() {
               ))}
             </ul>
           </div>
+          {/* Social Media */}
+          <div className="pt-3">
+            <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">
+              Follow Us
+            </p>
 
+            <div className="flex items-center gap-3">
+              <a
+                href="https://instagram.com/dutajayaexpress"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-xl bg-[#2A3C5F] flex items-center justify-center text-gray-300 hover:bg-[#E1306C] hover:text-white transition-all duration-300"
+              >
+                <FaInstagram size={18} />
+              </a>
+
+              <a
+                href="https://facebook.com/dutajayaekspress"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-xl bg-[#2A3C5F] flex items-center justify-center text-gray-300 hover:bg-[#1877F2] hover:text-white transition-all duration-300"
+              >
+                <FaFacebookF size={17} />
+              </a>
+
+              <a
+                href="https://wa.me/6281281260149"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-xl bg-[#2A3C5F] flex items-center justify-center text-gray-300 hover:bg-[#25D366] hover:text-white transition-all duration-300"
+              >
+                <FaWhatsapp size={18} />
+              </a>
+            </div>
+          </div>
           {/* KOLOM 4: QUICK LINKS */}
-          <div>
+          {/* <div>
             <h4 className="text-xs font-bold tracking-wider text-white uppercase mb-5 border-l-2 border-[#4472C4] pl-2">
               Quick Links
             </h4>
@@ -106,7 +141,7 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
         </div>
 

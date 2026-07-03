@@ -3,6 +3,7 @@ import { Package, ArrowRight, CheckCircle2 } from 'lucide-react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import logo from "../assets/logo.png";
 
 
 
@@ -17,9 +18,27 @@ export default function Hero() {
   }, []);
 
     return (
+        
         // 1. Mengubah background section utama dan menambahkan transisi warna
         <section className="w-full bg-white py-12 lg:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden transition-colors duration-300 dark:bg-slate-900">
-
+<img
+    src={logo}
+    alt=""
+    className="
+        absolute
+        left-1/2
+        top-1/2
+        -translate-x-1/2
+        -translate-y-1/2
+        w-[700px]
+        lg:w-[950px]
+        opacity-[0.04]
+        dark:opacity-[0.025]
+        pointer-events-none
+        select-none
+        z-0
+    "
+/>
             {/* Efek Lingkaran Dekoratif Latar Belakang (Disesuaikan opacity-nya di dark mode) */}
             <div className="absolute -top-20 -right-20 w-[500px] h-[500px] rounded-full bg-[#4472C4]/10 dark:bg-[#4472C4]/5 pointer-events-none" />
 

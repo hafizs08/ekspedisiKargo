@@ -5,6 +5,7 @@ import Partners from "../components/Partners";
 import Services from "../components/Services";
 import CtaSection from "../components/CtaSection";
 import Footer from "../components/Footer";
+import Reviews from "../components/Reviews";
 export default function Home() {
   return (
     <div className="min-h-screen w-full bg-[#F4F7FC]">
@@ -25,6 +26,10 @@ export default function Home() {
       <section id="tarif">
         {/* Component Tarif */}
         <Partners />
+      </section>
+
+      <section id="testimoni">
+        <Reviews />
       </section>
 
       <section id="tentang">

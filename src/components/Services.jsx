@@ -7,7 +7,6 @@ import {
   House,
   Warehouse,
   ArrowRight,
-  MessageCircle,
 } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -21,7 +20,7 @@ export default function Services() {
       desc: "Melayani pengiriman berbagai jenis barang mulai dari paket kecil hingga muatan besar ke seluruh Indonesia dengan tarif kompetitif.",
       badge: "Populer",
       color: "#ED7D31",
-      message: `Halo Admin.\n\nSaya ingin berkonsultasi mengenai layanan:\n\n Barang Kecil & Besar\n\nMohon informasi mengenai:\n• Tarif Pengiriman\n• Estimasi Waktu\n• Syarat Pengiriman\n\nTerima kasih.`,
+      message: `Hallo bapak/ibu terimakasih sudah menghubungi DJE Express. \nMohon untuk lengkapi data dibawah untuk mengetahui estimasi harga pengiriman barang anda \n\nNama: \nAlamat pengirim:\nAlamat penerima:\nJenis barang:\nJumlah koli dan berat barang:\n\nMohon ditunggu dan setelah ini bapak/ibu akan langsung terhubung dengan admin DJE Express 😊`,
     },
     {
       icon: <Car size={28} />,
@@ -29,7 +28,9 @@ export default function Services() {
       desc: "Pengiriman kendaraan roda dua maupun roda empat dengan proses yang aman, cepat, dan dilengkapi perlindungan.",
       badge: "Aman",
       color: "#4472C4",
-      message: `Halo Admin.\n\nSaya ingin berkonsultasi mengenai layanan:\n\n Motor & Mobil\n\nMohon informasi mengenai:\n• Tarif Pengiriman\n• Estimasi Waktu\n• Persyaratan Pengiriman Kendaraan\n\nTerima kasih.`,
+      // Karena di desain awal digabung, tapi format teks Anda dipisah antara Mobil dan Motor, 
+      // di bawah ini dibuat default ke template Mobil (atau bisa diisi template kombinasi)
+      message: `Hallo bapak/ibu terimakasih sudah menghubungi DJE Express. \nMohon untuk lengkapi data dibawah untuk mengetahui estimasi harga pengiriman mobil/motor anda \n\nNama: \nAlamat lengkap pengirim:\nAlamat lengkap penerima:\nJenis mobil/motor:\n\nMohon ditunggu dan setelah ini bapak/ibu akan langsung terhubung dengan admin DJE Express `,
     },
     {
       icon: <PawPrint size={28} />,
@@ -37,7 +38,7 @@ export default function Services() {
       desc: "Layanan pengiriman hewan peliharaan dengan penanganan khusus agar tetap nyaman dan sehat selama perjalanan.",
       badge: "Special",
       color: "#16A34A",
-      message: `Halo Admin.\n\nSaya ingin berkonsultasi mengenai layanan:\n\n Pengiriman Hewan\n\nMohon informasi mengenai:\n• Tarif\n• Persyaratan\n• Ketentuan Pengiriman\n\nTerima kasih.`,
+      message: `Hallo bapak/ibu terimakasih sudah menghubungi DJE Express. \nMohon untuk lengkapi data dibawah untuk mengetahui estimasi harga pengiriman hewan anda \n\nNama: \nAlamat lengkap pengirim:\nAlamat lengkap penerima:\nJenis hewan:\nUsia hewan:\nTanggal vaksin 1,2,dan 3 lengkap :\n\nMohon ditunggu dan setelah ini bapak/ibu akan langsung terhubung dengan admin DJE Express 😊🙏🏻`,
     },
     {
       icon: <Snowflake size={28} />,
@@ -45,7 +46,7 @@ export default function Services() {
       desc: "Pengiriman makanan beku menggunakan armada berpendingin sehingga kualitas produk tetap terjaga hingga tujuan.",
       badge: "Cold Chain",
       color: "#06B6D4",
-      message: `Halo Admin \n\nSaya ingin berkonsultasi mengenai layanan:\n\n Frozen Food\n\nMohon informasi mengenai:\n• Tarif\n• Estimasi Pengiriman\n• Ketentuan Cold Chain\n\nTerima kasih.`,
+      message: `Hallo bapak/ibu terimakasih sudah menghubungi DJE Express. \nMohon untuk lengkapi data dibawah untuk mengetahui estimasi harga pengiriman frozen food anda \n\nNama: \nAlamat lengkap pengirim:\nAlamat lengkap penerima:\nJenis frozen food:\nJumlah koli dan berat makanan:\n\nMohon ditunggu dan setelah ini bapak/ibu akan langsung terhubung dengan admin DJE Express 😊🙏🏻`,
     },
     {
       icon: <House size={28} />,
@@ -53,7 +54,7 @@ export default function Services() {
       desc: "Melayani pindahan rumah, apartemen, kantor, hingga gudang dengan proses packing dan pengangkutan yang aman.",
       badge: "Relokasi",
       color: "#8B5CF6",
-      message: `Halo Admin.\n\nSaya ingin berkonsultasi mengenai layanan:\n\n Barang Pindahan\n\nMohon informasi mengenai:\n• Tarif\n• Survey Lokasi\n• Packing & Bongkar Muat\n\nTerima kasih.`,
+      message: `Hallo bapak/ibu terimakasih sudah menghubungi DJE Express. \nMohon untuk lengkapi data dibawah untuk mengetahui estimasi harga pengiriman barang pindahan anda \n\nNama: \nAlamat pengirim:\nAlamat penerima:\nDaftar barang pindahan:\n\nMohon ditunggu dan setelah ini bapak/ibu akan langsung terhubung dengan admin DJE Express `,
     },
     {
       icon: <Warehouse size={28} />,
@@ -61,7 +62,7 @@ export default function Services() {
       desc: "Tersedia armada Pickup, CDD, Fuso, Tronton hingga Trailer yang dapat disewa sesuai kebutuhan pengiriman Anda.",
       badge: "Rental",
       color: "#F59E0B",
-      message: `Halo Admin\n\nSaya ingin berkonsultasi mengenai layanan:\n\nTech/Sewa Unit\n\nMohon informasi mengenai:\n• Jenis Armada\n• Tarif Sewa\n• Ketersediaan Unit\n\nTerima kasih.`,
+      message: `Hallo bapak/ibu terimakasih sudah menghubungi DJE Express. \nMohon untuk lengkapi data dibawah untuk mengetahui estimasi harga sewa unit anda \n\nNama: \nAlamat pengirim:\nAlamat penerima:\nJenis barang yang akan di angkut:\nTonase barang:\nUnit yang dibutuhkan:\n\nMohon ditunggu dan setelah ini bapak/ibu akan langsung terhubung dengan admin DJE Express 😊🙏🏻`,
     },
   ];
 
@@ -76,7 +77,6 @@ export default function Services() {
     <section
       className="bg-[#F4F7FC] py-20 px-5 transition-colors duration-300 dark:bg-slate-950 relative overflow-hidden"
       style={{
-        // Menggunakan Variabel CSS yang disuplai dari global CSS (Bisa deteksi dark mode v4)
         backgroundImage: `
           linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
           linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px)
@@ -185,11 +185,10 @@ export default function Services() {
 
           <button
             onClick={() =>
-              openWhatsapp(`Halo Admin\n\nSaya ingin berkonsultasi mengenai layanan logistik untuk perusahaan saya.\n\nMohon informasi lebih lanjut.\n\nTerima kasih.`)
+              openWhatsapp(`Hallo bapak/ibu terimakasih sudah menghubungi DJE Express. \nAda yang bisa kami bantu mengenai layanan logistik kami?\n\nMohon ditunggu dan setelah ini bapak/ibu akan langsung terhubung dengan admin DJE Express 😊🙏🏻`)
             }
             className="bg-[#4472C4] text-white px-7 py-3 rounded-xl font-semibold hover:bg-[#ED7D31] dark:bg-blue-600 dark:hover:bg-[#ED7D31] transition flex items-center justify-center gap-2.5 whitespace-nowrap w-full lg:w-auto text-center"
           >
-            {/* Logo Resmi WhatsApp Menggunakan SVG Inline */}
             <FaWhatsapp className="w-5 h-5" />
             Hubungi Kami
           </button>
