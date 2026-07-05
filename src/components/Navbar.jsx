@@ -10,8 +10,8 @@ export default function Navbar() {
   const menuItems = [
     { label: "Beranda", href: "#beranda", active: true },
     { label: "Layanan", href: "#layanan" },
-    { label: "Lacak Paket", href: "#tracking" },
-    { label: "Tarif", href: "#tarif" },
+    { label: "Promo", href: "#diskon" },
+    { label: "Reviews", href: "#reviews" },
     { label: "Tentang", href: "#tentang" },
   ];
 

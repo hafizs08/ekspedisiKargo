@@ -6,6 +6,8 @@ import Services from "../components/Services";
 import CtaSection from "../components/CtaSection";
 import Footer from "../components/Footer";
 import Reviews from "../components/Reviews";
+import PromoSlider from "../components/PromoSlider";
+
 export default function Home() {
   return (
     <div className="min-h-screen w-full bg-[#F4F7FC]">
@@ -19,22 +21,25 @@ export default function Home() {
         <Services />
       </section>
 
-      <section id="tracking">
+      <section id="CtaSection">
         <CtaSection />
       </section>
 
-      <section id="tarif">
+      <section id="diskon">
         {/* Component Tarif */}
-        <Partners />
+        {/* <Partners /> */}
+        <PromoSlider />
       </section>
 
-      <section id="testimoni">
+      <section id="reviews">
         <Reviews />
       </section>
+
 
       <section id="tentang">
         <Footer />
       </section>
+      
     </div>
   );
 }
