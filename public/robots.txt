@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dutajayaekspress.com/sitemap.xml
