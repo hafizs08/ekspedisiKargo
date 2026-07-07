@@ -40,7 +40,7 @@ export default function Footer() {
             <div className="flex gap-3 items-start text-gray-300">
               <MapPin size={18} className="text-[#ED7D31] flex-shrink-0 mt-0.5" />
               <p className="text-xs leading-relaxed max-w-sm">
-                Jl. Nama jalan No.00, Sudirejo I, Kec. Medan Kota, Kota Medan, Sumatera Utara 20218
+                Jalan Tanjung Bunga No. 49, Kel. Sudirejo II, Kec. Medan Kota, Kota Medan, Sumatera Utara, 20218
               </p>
             </div>
 
