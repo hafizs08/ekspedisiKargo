@@ -5,7 +5,7 @@ import logo from "../assets/logo.png";
 
 export default function CtaSection() {
   const benefits = [
-    'Tanpa minimal volume pengiriman',
+    'Minimum pengiriman 30Kg free ongkir',
     'Diskon cashback s.d 20% bagi member baru',
     'Penjemputan paket gratis ke rumah'
   ];
@@ -59,7 +59,7 @@ export default function CtaSection() {
           </div>
 
           {/* Grup Tombol Utama */}
-          <div className="flex flex-wrap items-center gap-4">
+          {/* <div className="flex flex-wrap items-center gap-4">
             <button 
               onClick={() => openWhatsapp("Halo Admin\n\nSaya ingin tahu lebih lanjut mengenai layanan pengiriman Duta Jaya Ekspress.\n\nMohon informasinya. Terima kasih.")}
               className="px-6 py-3.5 bg-[#ED7D31] text-white font-bold text-sm rounded-xl hover:bg-[#d96a20] transition-colors border-none flex items-center gap-2 cursor-pointer shadow-lg shadow-[#ED7D31]/30"
@@ -67,7 +67,7 @@ export default function CtaSection() {
               Hubungi Tim Sales
               <ArrowRight size={16} />
             </button>
-          </div>
+          </div> */}
 
         </div>
 

@@ -9,7 +9,7 @@ export default function Reviews() {
       role: "Pemilik Toko Online",
       service: "Kargo Darat",
       comment: "Pengiriman mesin pabrik dari Jakarta ke Medan tepat waktu. Harganya jauh lebih murah dibanding ekspedisi lain, dan update resinya sangat transparan. Sangat direkomendasikan!",
-      rating: 5,
+      rating: 4,
       initials: "BS"
     },
     {
