@@ -48,12 +48,12 @@ export default function Footer() {
             <div className="flex flex-col gap-2.5 text-xs text-gray-300">
               <div className="flex items-center gap-3">
                 <Phone size={14} className="text-[#4472C4]" />
-                <a href="tel:+6281281260149" className="hover:text-white transition-colors no-underline">+62 812-3456-7890</a>
+                <a href="tel:+6282177813772" className="hover:text-white transition-colors no-underline">+62 821-7781-3772</a>
               </div>
-              <div className="flex items-center gap-3">
+              {/* <div className="flex items-center gap-3">
                 <Phone size={14} className="text-[#4472C4]" />
                 <a href="tel:+6285382160110" className="hover:text-white transition-colors no-underline">+62 812-3456-7890</a>
-              </div>
+              </div> */}
               <div className="flex items-center gap-3 mt-1">
                 <Mail size={14} className="text-[#4472C4]" />
                 <a href="mailto:djeexpress104@gmail.com" className="hover:text-white transition-colors no-underline">djeexpress104@gmail.com</a>

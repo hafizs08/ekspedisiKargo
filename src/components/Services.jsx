@@ -11,7 +11,7 @@ import {
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function Services() {
-  const whatsappNumber = "6281533190347";
+  const whatsappNumber = "6282177813772";
 
   const servicesList = [
     {
@@ -20,7 +20,7 @@ export default function Services() {
       desc: "Melayani pengiriman berbagai jenis barang mulai dari paket kecil hingga muatan besar ke seluruh Indonesia dengan tarif kompetitif.",
       badge: "Populer",
       color: "#ED7D31",
-      message: `Hallo bapak/ibu terimakasih sudah menghubungi DJE Express. \nMohon untuk lengkapi data dibawah untuk mengetahui estimasi harga pengiriman barang anda \n\nNama: \nAlamat pengirim:\nAlamat penerima:\nJenis barang:\nJumlah koli dan berat barang:\n\nMohon ditunggu dan setelah ini bapak/ibu akan langsung terhubung dengan admin DJE Express 😊`,
+      message: `Hallo bapak/ibu terimakasih sudah menghubungi DJE Express. \nMohon untuk lengkapi data dibawah untuk mengetahui estimasi harga pengiriman barang anda \n\nNama: \nAlamat pengirim:\nAlamat penerima:\nJenis barang:\nJumlah koli dan berat barang:\n\nMohon ditunggu dan setelah ini bapak/ibu akan langsung terhubung dengan admin DJE Express `,
     },
     {
       icon: <Car size={28} />,
@@ -38,7 +38,7 @@ export default function Services() {
       desc: "Layanan pengiriman hewan peliharaan dengan penanganan khusus agar tetap nyaman dan sehat selama perjalanan.",
       badge: "Special",
       color: "#16A34A",
-      message: `Hallo bapak/ibu terimakasih sudah menghubungi DJE Express. \nMohon untuk lengkapi data dibawah untuk mengetahui estimasi harga pengiriman hewan anda \n\nNama: \nAlamat lengkap pengirim:\nAlamat lengkap penerima:\nJenis hewan:\nUsia hewan:\nTanggal vaksin 1,2,dan 3 lengkap :\n\nMohon ditunggu dan setelah ini bapak/ibu akan langsung terhubung dengan admin DJE Express 😊🙏🏻`,
+      message: `Hallo bapak/ibu terimakasih sudah menghubungi DJE Express. \nMohon untuk lengkapi data dibawah untuk mengetahui estimasi harga pengiriman hewan anda \n\nNama: \nAlamat lengkap pengirim:\nAlamat lengkap penerima:\nJenis hewan:\nUsia hewan:\nTanggal vaksin 1,2,dan 3 lengkap :\n\nMohon ditunggu dan setelah ini bapak/ibu akan langsung terhubung dengan admin DJE Express`,
     },
     {
       icon: <Snowflake size={28} />,
@@ -46,7 +46,7 @@ export default function Services() {
       desc: "Pengiriman makanan beku menggunakan armada berpendingin sehingga kualitas produk tetap terjaga hingga tujuan.",
       badge: "Cold Chain",
       color: "#06B6D4",
-      message: `Hallo bapak/ibu terimakasih sudah menghubungi DJE Express. \nMohon untuk lengkapi data dibawah untuk mengetahui estimasi harga pengiriman frozen food anda \n\nNama: \nAlamat lengkap pengirim:\nAlamat lengkap penerima:\nJenis frozen food:\nJumlah koli dan berat makanan:\n\nMohon ditunggu dan setelah ini bapak/ibu akan langsung terhubung dengan admin DJE Express 😊🙏🏻`,
+      message: `Hallo bapak/ibu terimakasih sudah menghubungi DJE Express. \nMohon untuk lengkapi data dibawah untuk mengetahui estimasi harga pengiriman frozen food anda \n\nNama: \nAlamat lengkap pengirim:\nAlamat lengkap penerima:\nJenis frozen food:\nJumlah koli dan berat makanan:\n\nMohon ditunggu dan setelah ini bapak/ibu akan langsung terhubung dengan admin DJE Express`,
     },
     {
       icon: <House size={28} />,
@@ -62,7 +62,7 @@ export default function Services() {
       desc: "Tersedia armada Pickup, CDD, Fuso, Tronton hingga Trailer yang dapat disewa sesuai kebutuhan pengiriman Anda.",
       badge: "Rental",
       color: "#F59E0B",
-      message: `Hallo bapak/ibu terimakasih sudah menghubungi DJE Express. \nMohon untuk lengkapi data dibawah untuk mengetahui estimasi harga sewa unit anda \n\nNama: \nAlamat pengirim:\nAlamat penerima:\nJenis barang yang akan di angkut:\nTonase barang:\nUnit yang dibutuhkan:\n\nMohon ditunggu dan setelah ini bapak/ibu akan langsung terhubung dengan admin DJE Express 😊🙏🏻`,
+      message: `Hallo bapak/ibu terimakasih sudah menghubungi DJE Express. \nMohon untuk lengkapi data dibawah untuk mengetahui estimasi harga sewa unit anda \n\nNama: \nAlamat pengirim:\nAlamat penerima:\nJenis barang yang akan di angkut:\nTonase barang:\nUnit yang dibutuhkan:\n\nMohon ditunggu dan setelah ini bapak/ibu akan langsung terhubung dengan admin DJE Express`,
     },
   ];
 
@@ -185,7 +185,7 @@ export default function Services() {
 
           <button
             onClick={() =>
-              openWhatsapp(`Hallo bapak/ibu terimakasih sudah menghubungi DJE Express. \nAda yang bisa kami bantu mengenai layanan logistik kami?\n\nMohon ditunggu dan setelah ini bapak/ibu akan langsung terhubung dengan admin DJE Express 😊🙏🏻`)
+              openWhatsapp(`Hallo bapak/ibu terimakasih sudah menghubungi DJE Express. \nAda yang bisa kami bantu mengenai layanan logistik kami?\n\nMohon ditunggu dan setelah ini bapak/ibu akan langsung terhubung dengan admin DJE Express`)
             }
             className="bg-[#4472C4] text-white px-7 py-3 rounded-xl font-semibold hover:bg-[#ED7D31] dark:bg-blue-600 dark:hover:bg-[#ED7D31] transition flex items-center justify-center gap-2.5 whitespace-nowrap w-full lg:w-auto text-center"
           >
