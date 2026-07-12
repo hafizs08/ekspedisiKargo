@@ -31,7 +31,7 @@ export default function Footer() {
                 className="h-10 w-auto object-contain"
               />
               <span className="text-lg font-black tracking-tight text-white">
-                DUTA JAYA <span className="text-[#ED7D31]">EKSPRESS</span>
+                DAKSA JAYA <span className="text-[#ED7D31]">EXPRESS</span>
               </span>
             </div>
 
