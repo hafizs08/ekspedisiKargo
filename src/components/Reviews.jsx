@@ -45,7 +45,7 @@ export default function Reviews() {
             Apa Kata Mereka Tentang <span className="text-[#ED7D31]">Layanan Kami</span>?
           </h2>
           <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base">
-            Kepercayaan Anda adalah prioritas kami. Berikut adalah pengalaman nyata dari para pelaku usaha dan pelanggan setia Duta Jaya Ekspress.
+            Kepercayaan Anda adalah prioritas kami. Berikut adalah pengalaman nyata dari para pelaku usaha dan pelanggan setia Daksa Jaya Express.
           </p>
         </div>
 

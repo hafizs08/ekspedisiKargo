@@ -78,7 +78,6 @@ export default function PromoCard() {
                 </p>
               </div>
 
-              {/* Bawah: Highlight Nilai Diskon */}
               <div className="mt-auto pt-4 border-t border-dashed border-gray-300 dark:border-[#23356F] flex items-center justify-between">
                 <span className="text-xs font-bold text-[#ED7D31] bg-[#ED7D31]/10 px-2.5 py-1 rounded-md">
                   {promo.highlight}

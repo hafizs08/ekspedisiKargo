@@ -103,17 +103,13 @@ export default function Hero() {
                     </div>
                 </div>
 
-                {/* SISI KANAN: TRACKING CARD LIVE */}
-                {/* 2. Menyesuaikan warna card pelacakan agar gelap redup di dark mode */}
                 <div className="w-full bg-white border border-[#E8EDF5] rounded-3xl p-6 sm:p-8 shadow-xl shadow-[#4472C4]/5 relative dark:bg-slate-800/50 dark:border-slate-800 dark:shadow-black/20 backdrop-blur-sm">
-                    {/* Garis Gradasi Dekoratif Atas Card */}
                     <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-[#4472C4] to-[#ED7D31] rounded-t-3xl" />
 
                     <div className="text-xs font-bold tracking-wider text-gray-400 uppercase mb-4 text-left dark:text-slate-500">
                         Lacak Pengiriman
                     </div>
 
-                    {/* Input Resi */}
                     <div className="flex gap-2 mb-6">
                         <input
                             type="text"

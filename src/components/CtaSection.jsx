@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, CheckCircle } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 import kapal from "../assets/kapal.jpg";
 import logo from "../assets/logo.png";
 
@@ -45,7 +45,7 @@ export default function CtaSection() {
 
           {/* Deskripsi Singkat */}
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed mb-8 max-w-2xl">
-            Hubungi Duta Jaya Ekspress sekarang juga. Nikmati kemudahan pelacakan resi, solusi logistik terintegrasi, dan pengelolaan pengiriman terpusat yang dipandu langsung oleh tim profesional kami.
+            Hubungi Daksa Jaya Express sekarang juga. Nikmati kemudahan pelacakan resi, solusi logistik terintegrasi, dan pengelolaan pengiriman terpusat yang dipandu langsung oleh tim profesional kami.
           </p>
 
           {/* List Keunggulan Instan */}
@@ -57,17 +57,6 @@ export default function CtaSection() {
               </div>
             ))}
           </div>
-
-          {/* Grup Tombol Utama */}
-          {/* <div className="flex flex-wrap items-center gap-4">
-            <button 
-              onClick={() => openWhatsapp("Halo Admin\n\nSaya ingin tahu lebih lanjut mengenai layanan pengiriman Duta Jaya Ekspress.\n\nMohon informasinya. Terima kasih.")}
-              className="px-6 py-3.5 bg-[#ED7D31] text-white font-bold text-sm rounded-xl hover:bg-[#d96a20] transition-colors border-none flex items-center gap-2 cursor-pointer shadow-lg shadow-[#ED7D31]/30"
-            >
-              Hubungi Tim Sales
-              <ArrowRight size={16} />
-            </button>
-          </div> */}
 
         </div>
 

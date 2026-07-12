@@ -24,11 +24,10 @@ export default function Footer() {
 
           {/* KOLOM 1: PROFIL PERUSAHAAN & ALAMAT */}
           <div className="lg:col-span-2 flex flex-col gap-5">
-            {/* Logo Duta Jaya Ekspress (Sudah Diperbaiki Struktur Div) */}
             <div className="flex items-center gap-3">
               <img
                 src={logo}
-                alt="Duta Jaya Ekspress"
+                alt="Daksa Jaya Express"
                 className="h-10 w-auto object-contain"
               />
               <span className="text-lg font-black tracking-tight text-white">
@@ -50,10 +49,7 @@ export default function Footer() {
                 <Phone size={14} className="text-[#4472C4]" />
                 <a href="tel:+6282177813772" className="hover:text-white transition-colors no-underline">+62 821-7781-3772</a>
               </div>
-              {/* <div className="flex items-center gap-3">
-                <Phone size={14} className="text-[#4472C4]" />
-                <a href="tel:+6285382160110" className="hover:text-white transition-colors no-underline">+62 812-3456-7890</a>
-              </div> */}
+
               <div className="flex items-center gap-3 mt-1">
                 <Mail size={14} className="text-[#4472C4]" />
                 <a href="mailto:djeexpress104@gmail.com" className="hover:text-white transition-colors no-underline">djeexpress104@gmail.com</a>
@@ -127,27 +123,11 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          {/* KOLOM 4: QUICK LINKS */}
-          {/* <div>
-            <h4 className="text-xs font-bold tracking-wider text-white uppercase mb-5 border-l-2 border-[#4472C4] pl-2">
-              Quick Links
-            </h4>
-            <ul className="flex flex-col gap-3 p-0 m-0 list-none">
-              {quickLinks.map((link, idx) => (
-                <li key={idx}>
-                  <a href="#" className="text-xs text-gray-400 hover:text-white no-underline transition-colors flex items-center gap-1">
-                    {link} <ArrowUpRight size={10} className="opacity-40" />
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div> */}
-
         </div>
 
         {/* HAK CIPTA BAWAH */}
         <div className="border-t border-[#2A3C5F] pt-8 mt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
-          <p>© {new Date().getFullYear()} Duta Jaya Ekspress. All Rights Reserved.</p>
+          <p>© {new Date().getFullYear()} Daksa Jaya Express. All Rights Reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white no-underline transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white no-underline transition-colors">Terms of Service</a>

@@ -7,16 +7,16 @@ html, body, #root {
   box-sizing: border-box;
   min-height: 100vh;
   width: 100%;
-  background-color: #FFFFFF !important; /* Paksa putih bersih saat normal */
-  color: #1F2E4D !important;            /* Teks gelap */
+  background-color: #FFFFFF !important; 
+  color: #1F2E4D !important;           
   transition: background-color 0.2s ease, color 0.2s ease;
   scroll-behavior: smooth;
 }
 
-/* 2. ATURAN KHUSUS (HANYA AKTIF JIKA ADA CLASS .dark) */
+
 html.dark, 
 html.dark body, 
 html.dark #root {
-  background-color: #0B132B !important; /* Warna gelap */
-  color: #F4F7FC !important;            /* Teks putih/terang */
+  background-color: #0B132B !important;
+  color: #F4F7FC !important;
 }

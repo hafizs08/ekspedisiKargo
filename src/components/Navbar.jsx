@@ -23,16 +23,16 @@ export default function Navbar() {
         <div className="flex cursor-pointer items-center gap-3">
           <img
             src={logo}
-            alt="Duta Jaya Ekspress"
+            alt="Daksa Jaya Express"
             className="h-10 w-auto object-contain"
           />
           <span className="text-xl font-black tracking-tight text-[#022E72] dark:text-white">
-            Duta Jaya{" "}
-            <span className="text-[#C48C3A]">Ekspress</span>
+            Daksa Jaya{" "}
+            <span className="text-[#C48C3A]">Express</span>
           </span>
         </div>
 
-        {/* Kanan: Gabungan Menu Desktop & Tombol Aksi */}
+
         <div className="flex items-center gap-6">
 
           {/* Desktop Navigation Links */}
@@ -51,12 +51,9 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Garis Pembatas Antara Menu dan Dark Mode (Hanya muncul di Desktop) */}
           <div className="hidden h-5 w-[1px] bg-gray-200 md:block dark:bg-slate-700" />
 
-          {/* Tombol Kontrol (Dark Mode & Hamburger Mobile) */}
           <div className="flex items-center gap-2">
-            {/* Tombol Dark Mode */}
             <button
               onClick={() => setDark(!dark)}
               aria-label="Toggle Dark Mode"
@@ -69,7 +66,6 @@ export default function Navbar() {
               )}
             </button>
 
-            {/* Tombol Hamburger Mobile (Berada di paling kanan) */}
             <button
               onClick={() => setIsOpen(!isOpen)}
               aria-label="Toggle Menu"
