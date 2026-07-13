@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, ArrowUpRight } from 'lucide-react';
+import { MapPin, Phone, Mail, ArrowUpRight, Map } from 'lucide-react';
 import logo from '../assets/logo.png';
 import { FaInstagram, FaFacebookF, FaWhatsapp } from "react-icons/fa";
 
@@ -13,7 +13,8 @@ export default function Footer() {
     'Jasa Pengiriman Barang Pindahan',
     'Jasa Pengiriman Sewa Unit'
   ];
-  const quickLinks = ['Request A Quote', 'Track & Trace', 'Find A Location', 'Help & FAQ'];
+  
+  const mapsLink = "https://maps.app.goo.gl/AdCg4fyX94TFTWHE6";
 
   return (
     <footer className="w-full bg-[#1F2E4D] border-t border-[#2A3C5F] pt-16 pb-8 px-4 sm:px-6 lg:px-8 text-left">
@@ -35,13 +36,18 @@ export default function Footer() {
               </span>
             </div>
 
-            {/* Alamat Fisik */}
-            <div className="flex gap-3 items-start text-gray-300">
+            {/* Alamat Fisik dengan Tautan */}
+            <a
+              href={mapsLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex gap-3 items-start text-gray-300 hover:text-white transition-colors no-underline"
+            >
               <MapPin size={18} className="text-[#ED7D31] flex-shrink-0 mt-0.5" />
               <p className="text-xs leading-relaxed max-w-sm">
                 Jalan Tanjung Bunga No. 49, Kel. Sudirejo II, Kec. Medan Kota, Kota Medan, Sumatera Utara, 20218
               </p>
-            </div>
+            </a>
 
             {/* Nomor Telepon & Email */}
             <div className="flex flex-col gap-2.5 text-xs text-gray-300">
@@ -88,6 +94,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
+          
           {/* Social Media */}
           <div className="pt-3">
             <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">
@@ -114,12 +121,22 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://wa.me/6281281260149"
+                href="https://wa.me/6282177813772"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-xl bg-[#2A3C5F] flex items-center justify-center text-gray-300 hover:bg-[#25D366] hover:text-white transition-all duration-300"
               >
                 <FaWhatsapp size={18} />
+              </a>
+
+              {/* Link ke Google Maps */}
+              <a
+                href={mapsLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-xl bg-[#2A3C5F] flex items-center justify-center text-gray-300 hover:bg-[#4285F4] hover:text-white transition-all duration-300"
+              >
+                <Map size={18} />
               </a>
             </div>
           </div>
